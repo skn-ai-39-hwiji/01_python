@@ -67,5 +67,5 @@ print(temp[4:8]) # 머신러닝
 """ stop을 작성하지 않은 경우 == 끝까지 """
 print(temp[9:]) # 판다스 데이터 분석
 print(temp[-2:]) # 분석
-
+print(temp[:9]) # 분석
 
