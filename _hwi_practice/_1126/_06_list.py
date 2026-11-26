@@ -91,3 +91,53 @@ print(plates)
 """
 lst6 = [1,2,3]  # 1차원
 lst7 = [4,5,6]  # 1차원
+
+
+lst6 = [1,2,3]
+lst7 = [4,5,6]
+
+lst_2d_1 = [lst6, lst7]
+print(lst_2d_1)
+
+print('lst_2d_1[1][2]:', lst_2d_1[1][2])
+print('lst_2d_1[1][1]:', lst_2d_1[1][1])
+
+lst_2d_1.append([7,8,9])
+print(lst_2d_1)
+
+# csv(Comma Separated Value): 콤마로 구분된 값 (문자열 형식)
+
+# str.split(구분자)
+# - 문자열 내에서 지정된 구분자를 기준으로 나누어 list 반환
+print("--- str.split(구분자) ---")
+data = '이순신,48,전남,여수시'
+split_data = data.split(',')
+print("split 결과 : ", split_data, type(split_data))
+
+print("--- list 연산 (+, *) ---")
+
+foods = ['🍗', '🍕', '🍔']
+drinks = ['☕', '💧']
+
+foods_drinks = foods + drinks
+print('foods_drinks:', foods_drinks)
+print('foods * 2:', foods * 2)
+
+# list slicing (문자열과 같은 방법)
+
+print("--- list slicing ---")
+texts = ['안녕하세요', 'hello', '곤니찌와', 'bye', '잘가']
+
+print("texts[0:3] : " , texts[0:3])
+print("texts[2:]:", texts[2:])
+print("texts[::2]", texts[::2]   )
+
+
+# for 변수 in 순회객체: 
+# -> 순회객체에서 요소를 하나씩 꺼내 변수에 저장하여 사용
+lst = [10, 20, 30, 40, 50]
+for e in lst:
+    print("요소:", e)
+# 인덱스 순회
+for index, e in enumerate(lst):
+    print(f"{index}번째 요소: {e}")
