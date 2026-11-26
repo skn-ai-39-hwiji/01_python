@@ -107,3 +107,4 @@ print('울산' in location) # False
 names = ('김철수', '홍길동', '이미영')
 print('이미영' in names) # True
 print('김미영' in names) # False
+
